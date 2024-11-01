@@ -1,0 +1,52 @@
+.wptp-the-tooltip{
+	position:relative !important;
+	border-bottom:1px dotted !important;
+}
+
+.wptp-the-tooltip a{
+	border:none !important;
+	text-decoration:none !important;
+}
+
+.wptp-tooltip-text{
+	visibility:hidden;
+	opacity:0;
+	color:#fff; 
+	font-size:12px;
+	line-height:18px;
+	position:absolute;
+	margin-left: -72px;
+	-webkit-transition: all ease-in 0.3s;
+	-moz-transition: all ease-in 0.3s;
+	-o-transition: all ease-in 0.3s;
+	-ms-transition: all ease-in 0.3s;
+	transition: all ease-in 0.3s;
+	width:140px;
+	padding:5px;
+	background-color:#555555; 
+	text-align:center;
+	border-radius:3px;
+	left: 0px;
+	bottom:32px;
+	font-style:normal;
+	z-index:99998;
+}
+
+.wptp-tooltip-text:after{
+	z-index:100;
+	position:absolute;
+	content:"";
+	width:0;
+	height:0;
+	bottom:-10px;
+	left:65px;
+	border-top:10px solid #555555;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	z-index:99998;
+}
+
+.wptp-the-tooltip:hover .wptp-tooltip-text{
+	visibility:visible;
+	opacity:1;
+}
